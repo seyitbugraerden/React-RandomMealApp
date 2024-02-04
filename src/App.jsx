@@ -1,10 +1,15 @@
 import { useContext } from "react";
 import "./App.css";
-import { MealContext, MealProvider } from "./context/dataContext";
+import { MealContext } from "./context/dataContext";
+import RenderScreen from "./components/renderScreen";
 
 function App() {
   const { meal } = useContext(MealContext);
-  return <>{meal}</>;
+  return (
+    <>
+      <RenderScreen />
+    </>
+  );
 }
 
 export default App;

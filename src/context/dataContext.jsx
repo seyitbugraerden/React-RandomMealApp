@@ -12,7 +12,7 @@ export const MealProvider = ({ children }) => {
       .get("https://www.themealdb.com/api/json/v1/1/random.php")
       .then((response) => {
         console.log(response.data.meals[0]);
-        setMeal(response.data.meals[0].strMeal);
+        setMeal(response.data.meals[0]);
       });
   }, []);
 
