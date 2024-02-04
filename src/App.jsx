@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { MealContext } from "./context/dataContext";
 import "./App.css";
+import { MealContext, MealProvider } from "./context/dataContext";
 
 function App() {
   const { meal } = useContext(MealContext);
