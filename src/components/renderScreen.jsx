@@ -14,7 +14,7 @@ function renderScreen() {
             {meal.strCategory} , {meal.strArea}
           </span>
         </h6>
-        <h6>How To Make?</h6>
+        <h6 className="p-0">How To Make?</h6>
         <p>{meal.strInstructions}</p>
       </Card>
     </>
