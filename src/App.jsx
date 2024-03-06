@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import "./App.css";
 import { MealContext } from "./context/dataContext";
 import RenderScreen from "./components/renderScreen";
+import "./App.css";
 
 function App() {
   const { meal } = useContext(MealContext);
